@@ -1,0 +1,16 @@
+import { estrategiaDeExportacion } from '../estrategiaDeImportacion';
+import { Exportable } from '../exportable';
+import { adapterExportadorPDF } from './adapterExportadorPDF';
+
+
+export class exportarAPdf implements estrategiaDeExportacion{
+    
+    private adapter: adapterExportadorPDF; 
+
+    public exportar(exportable: Exportable): string {
+        return this.adapter.exportarApdf(exportable);
+        
+    }
+
+
+}

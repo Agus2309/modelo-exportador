@@ -1,0 +1,13 @@
+import { Exportable } from '../exportable';
+import { adapterExportadorPDF } from './adapterExportadorPDF';
+
+
+export class adapterPdfBox implements adapterExportadorPDF{
+
+    exportarApdf(exportable: Exportable): string {
+        return "";
+    }
+
+
+    
+}
